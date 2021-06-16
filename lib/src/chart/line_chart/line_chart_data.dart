@@ -1464,7 +1464,7 @@ List<TouchedSpotIndicatorData> defaultTouchedIndicators(
 
     var dotSize = 10.0;
     if (barData.dotData.show) {
-      dotSize = 4.0 * 1.8;
+      dotSize = 4.0;
     }
 
     final dotData = FlDotData(

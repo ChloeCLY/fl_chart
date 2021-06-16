@@ -1276,7 +1276,6 @@ class LineChartPainter extends AxisChartPainter<LineChartData> {
 
     _bgTouchTooltipPaint.color = tooltipData.tooltipBgColor;
     canvasWrapper.drawRRect(roundedRect, _bgTouchTooltipPaint);
-    canvasWrapper.drawColor(Color(0), BlendMode.clear);
 
     /// draw the texts one by one in below of each other
     var topPosSeek = tooltipData.tooltipPadding.top;

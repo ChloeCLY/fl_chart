@@ -1273,10 +1273,10 @@ class LineChartPainter extends AxisChartPainter<LineChartData> {
     final radius = Radius.circular(tooltipData.tooltipRoundedRadius);
     final roundedRect = RRect.fromRectAndCorners(rect,
         topLeft: radius, topRight: radius, bottomLeft: radius, bottomRight: radius);
-    canvas.drawColor(Color(0), BlendMode.clear);
 
     _bgTouchTooltipPaint.color = tooltipData.tooltipBgColor;
     canvasWrapper.drawRRect(roundedRect, _bgTouchTooltipPaint);
+    canvasWrapper.drawColor(Color(0), BlendMode.clear);
 
     /// draw the texts one by one in below of each other
     var topPosSeek = tooltipData.tooltipPadding.top;

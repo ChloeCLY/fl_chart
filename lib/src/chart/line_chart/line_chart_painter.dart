@@ -1280,7 +1280,7 @@ class LineChartPainter extends AxisChartPainter<LineChartData> {
         Paint()
           ..color = Colors.black.withAlpha(shadowAlpha)
           ..maskFilter =
-              MaskFilter.blur(BlurStyle.normal, convertRadiusToSigma(3)));
+              MaskFilter.blur(BlurStyle.normal, 3 * 0.57735 + 0.5));
     canvasWrapper.drawRRect(roundedRect, _bgTouchTooltipPaint);
 
     /// draw the texts one by one in below of each other
